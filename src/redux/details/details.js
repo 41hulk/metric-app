@@ -19,7 +19,7 @@ export const fetchDetails = (moreInfoLink, name) => async (dispatch) => {
   const currentDate = d.toLocaleString('en-ZA', { year: 'numeric', month: '2-digit', day: '2-digit' })
     .replace(/\//g, '-');
   const url = 'https://api.covid19tracking.narrativa.com';
-  const response = fetch(`${url}${moreInfoLink}`)
+  const response = await fetch(`${url}${moreInfoLink}`)
     .then((res) => (
       res.json().then((json) => {
         const country = json.dates[currentDate].countries[name];

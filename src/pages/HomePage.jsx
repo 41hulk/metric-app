@@ -1,8 +1,8 @@
-import Country from '../components/home/countries';
+import Countries from '../components/home/countries';
 
 const Homepage = () => (
-  <div className="homepage container-fluid">
-    <Country />
+  <div className="homepage container-fluid p-0">
+    <Countries />
   </div>
 );
 
