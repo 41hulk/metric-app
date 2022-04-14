@@ -4,7 +4,7 @@ const ORDER_BY_DEATHS = 'ORDER_BY_DEATHS';
 const ORDER_BY_CASES = 'ORDER_BY_CASES';
 
 // Reducer
-export default function countryReducer(state = [], action) {
+export default function reducer(state = [], action) {
   switch (action.type) {
     case GET_DATA_COUNTRIES:
       return action.payload.sort((a, b) => Number(b.totalNewDeaths) - Number(a.totalNewDeaths));

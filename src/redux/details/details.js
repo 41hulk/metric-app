@@ -1,7 +1,7 @@
 // Actions
 const GET_DETAILS = 'GET_DETAILS';
 // Reducer
-export default function detailReducer(state = {}, action) {
+export default function reducer(state = {}, action) {
   switch (action.type) {
     case GET_DETAILS:
       return action.payload;
