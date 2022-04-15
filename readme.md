@@ -51,7 +51,9 @@ Feel free to check the [issues page](https://github.com/41hulk/metric-app/issues
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgments
 
+The project's design was inspired by the <a href="https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs">Ballhead-App</a>. My sincere thanks to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for for sharing this incredible design with us.
 
 ## 📝 License
 
