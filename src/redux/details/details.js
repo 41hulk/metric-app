@@ -1,5 +1,6 @@
 // Actions
-const GET_DETAILS = 'GET_DETAILS';
+export const GET_DETAILS = 'GET_DETAILS';
+
 // Reducer
 export default function reducer(state = {}, action) {
   switch (action.type) {
@@ -16,8 +17,10 @@ export const fetchDetails = (moreInfoLink, name) => async (dispatch) => {
   if (d.getUTCHours() <= 9) {
     d = getYesterdayDate(d);
   }
+
   const currentDate = d.toLocaleString('en-ZA', { year: 'numeric', month: '2-digit', day: '2-digit' })
     .replace(/\//g, '-');
+  // const currentDate = '2022-04-14';
   const url = 'https://api.covid19tracking.narrativa.com';
   const response = await fetch(`${url}${moreInfoLink}`)
     .then((res) => (
