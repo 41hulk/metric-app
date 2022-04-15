@@ -1,9 +1,10 @@
+/* eslint-disable import/extensions */
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { render, screen, fireEvent } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Homepage from '../pages/Homepage';
+import Homepage from '../pages/Homepage.jsx';
 import Nav from '../components/Navbar/Navbar';
 import store from '../redux/configureStore';
 import { GET_DATA_COUNTRIES } from '../redux/countries/country';

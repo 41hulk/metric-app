@@ -1,9 +1,10 @@
+/* eslint-disable import/extensions */
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import DetailsList from '../components/Details/detailsList';
+import DetailsList from '../components/Details/detailsList.jsx';
 import store from '../redux/configureStore';
 import { GET_DETAILS } from '../redux/details/details';
 
